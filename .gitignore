@@ -9,9 +9,11 @@ __pycache__/
 # C extensions
 *.so
 
-# generated db model
-data/gen/!.gitkeep
+# Ignore generated db model
 data/gen/*
+# Except This One
+!data/gen/.gitkeep
+
 
 # Distribution / packaging
 .Python
