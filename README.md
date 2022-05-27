@@ -41,7 +41,7 @@ or
 
 ### Getting Around (a.k.a Repository Structure)
 
-The code you will work on is containerized and requires docker to run (https://www.docker.com/products/personal/).  The heart of the code sits in `src/docker`.  `src/docker/Dockerfile` contains information on how the contianer is made.  If you wish to add different packages to the python instance running in the container, simply add it to `src/dockerlibs/requirements.txt`.  The container can be built and run on your local docker installation by executing `./scripts/build.sh` and `./scripts/run.sh` (you may need to `chmod +x` the scripts on your local machine.  Your starting point will be `src/docker/src/entrypoint.py`.    
+The code you will work on is containerized and requires docker to run (https://www.docker.com/products/personal/).  The heart of the code sits in `src/docker`.  `src/docker/Dockerfile` contains information on how the contianer is made.  If you wish to add different packages to the python instance running in the container, simply add it to `src/dockerlibs/requirements.txt`.  The container can be built and run on your local docker installation by executing `./scripts/build.sh` and `./scripts/run.sh` (you may need to `chmod +x` the scripts on your local machine.  Your starting point will be `src/docker/src/entrypoint.py`.
 
 ### Part One - ETL Design
 
@@ -261,6 +261,9 @@ Using this assessment we seek to understand the following
 * how you think about ETL processes and steps
 * how you structure your software in terms of readability and execution by others.
 
+### Submitting your work
+
+Please clone this repository, complete the assessment, and send the entire thing back to us over email!
 
 
 
