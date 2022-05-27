@@ -161,7 +161,7 @@ Once the extraction and transformations are complete and provided that the data 
 ### Part Two - Analysis
 
 Now put yourself in the shoes of the Analyst that would be analyzing this data and that has access to the database where you loaded the data.  Write two SQL queries against the data that you loaded into the database from Part One - ETL Design that return 
-1. The distribution of final applicant states, on a per customer basis and include the result. 
+1. The distribution of final applicant states, on a per company basis and include the result. 
 1. The distribution of applicant states, prior to disqualification, for the applicants that were disqualified.
 
 The following code excerpt from `src/docker/src/entrypoint.py` is wired to execute on the sqlite db from part one.  All that is necessary is to fill the query variables and the code will print the query and the result at execution!  More information about supported SQL functions is available at https://docs.ponyorm.org/api_reference.html#queries-and-functions
@@ -200,7 +200,7 @@ def part_two_query_two(input: None):
     Returns: None
     """
 
-    logging.info('Running First Query...')
+    logging.info('Running Second Query...')
     # Select Statement - This Throws SQL over PonyORM (https://docs.ponyorm.org/queries.html)
     query = """
     *

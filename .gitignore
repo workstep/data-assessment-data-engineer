@@ -10,6 +10,7 @@ __pycache__/
 *.so
 
 # generated db model
+data/gen/!.gitkeep
 data/gen/*
 
 # Distribution / packaging
