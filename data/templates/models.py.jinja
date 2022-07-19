@@ -31,3 +31,8 @@ def insert_Table_{{ table }}(list_of_dicts: []):
 @db_session
 def select_statement(statement):
     return db.select(statement)
+
+@db_session
+def raw_query(statement):
+    cursor = db.execute(statement)
+    return cursor.fetchall()
