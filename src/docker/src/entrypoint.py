@@ -154,7 +154,7 @@ def part_two_query_two(input: None):
     Returns: None
     """
 
-    logging.info('Running First Query...')
+    logging.info('Running Second Query...')
     # Select Statement - This Throws SQL over PonyORM (https://docs.ponyorm.org/queries.html)
     query = """
     SELECT
